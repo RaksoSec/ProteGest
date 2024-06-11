@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ProteGest</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="xp">XP</string>
+    <string name="lostPassowrd"><u>Olvidé mi contraseña</u></string>
+</resources>

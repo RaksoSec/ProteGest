@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="¡Hola!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logo" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="70dp"
+        android:layout_height="71dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-15dp"
+        android:contentDescription="Logo"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/logo_name"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="-5dp"
+        android:layout_toEndOf="@+id/logo"
+        android:contentDescription="Nombre de la aplicación"
+        android:src="@drawable/name" />
+
+    <Button
+        android:id="@+id/calendarButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="13dp"
+        android:text="Calendario" />
+
+    <ImageView
+        android:id="@+id/calendarIcon"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="11dp"
+        android:layout_toStartOf="@+id/calendarButton"
+        android:contentDescription="Icono de calendario"
+        android:src="@drawable/ic_calendar_two" />
+
+    <Button
+        android:id="@+id/volunteersButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendarButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="13dp"
+        android:text="Voluntarios" />
+
+
+    <ImageView
+        android:id="@+id/volunteersIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/calendarIcon"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/volunteersButton"
+        android:contentDescription="Icono de voluntarios"
+        android:src="@drawable/ic_users" />
+
+    <Button
+        android:id="@+id/tasksButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/volunteersButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="13dp"
+        android:text="Tareas" />
+
+    <ImageView
+        android:id="@+id/tasksIcon"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/volunteersIcon"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="21dp"
+        android:layout_toStartOf="@+id/tasksButton"
+        android:contentDescription="Icono de tareas"
+        android:src="@drawable/ic_tasks" />
+
+    <Button
+        android:id="@+id/achievementsButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tasksButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="13dp"
+        android:text="Logros" />
+
+
+    <ImageView
+        android:id="@+id/achievementsIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/volunteersIcon"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@+id/tasksButton"
+        android:contentDescription="Icono de logros"
+        android:src="@drawable/ic_achievements" />
+
+    <Button
+        android:id="@+id/adminPanelButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/achievementsButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="13dp"
+        android:text="Panel de administrador" />
+
+    <ImageView
+        android:id="@+id/adminPanelIcon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/volunteersIcon"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="19dp"
+        android:layout_toStartOf="@+id/tasksButton"
+        android:contentDescription="Icono de panel de administrador"
+        android:src="@drawable/ic_admin_panel" />
+
+    <Button
+        android:id="@+id/viewProfileButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adminPanelButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="11dp"
+        android:text="Ver perfil" />
+
+    <ImageView
+        android:id="@+id/viewProfileIcon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/volunteersIcon"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginEnd="19dp"
+        android:layout_toStartOf="@+id/tasksButton"
+        android:contentDescription="Icono de ver perfil"
+        android:src="@drawable/ic_profile" />
+
+    <Button
+        android:id="@+id/vehicleButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewProfileButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="11dp"
+        android:text="Vehículos" />
+
+    <ImageView
+        android:id="@+id/vehicleIcon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/viewProfileIcon"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="17dp"
+        android:layout_toStartOf="@+id/tasksButton"
+        android:contentDescription="Vehículo"
+        android:src="@drawable/ic_vehicle" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cerrar sesión"
+        android:background="#FF8A80"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp" />
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="70dp"
+        android:layout_height="71dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-2dp"
+        android:contentDescription="Logo"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/logo_name"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="9dp"
+        android:layout_toEndOf="@+id/logo"
+        android:contentDescription="Nombre de la aplicación"
+        android:src="@drawable/name" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/logo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/groupCodeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Obtener código de agrupación"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/addServiceButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Añadir servicio"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/serviceSignInButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fichar un servicio"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/deleteServiceButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eliminar servicio"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/addTaskButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Añadir tarea"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/deleteTaskButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eliminar tarea"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/completeTaskButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Completar tarea"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/grantAchievementButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Otorgar logro"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/deleteVolunteerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eliminar voluntario"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/modifyRoleVolunteerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Modificar rol de un voluntario"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/modifyRankVolunteerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Modificar rango de un voluntario"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/addVehicleButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Añadir vehículo"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/deleteVehicleButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eliminar vehículo"
+                android:layout_marginBottom="8dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/round_button"
+        android:drawableStart="@drawable/ic_arrow_back"
+        android:drawablePadding="10dp"
+        android:onClick="goBack"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
